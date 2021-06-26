@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45584E"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UpdateUser">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add new photo or let older one as profile" />
+
+
+    <ImageView
+        android:id="@+id/imageView_uu"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:onClick="ChooseImage"
+        android:src="@drawable/ic_image" />
+
+    <EditText
+        android:id="@+id/name_et_uu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autoText="true"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/age_et_uu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autoText="true"
+        android:hint="Age"
+        android:inputType="number"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/bio_et_uu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autoText="true"
+        android:hint="Bio"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/email_et_uu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autoText="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/alamat_et_uu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autoText="true"
+        android:hint="Alamat"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/save_profile_btn_uu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Update" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_uu"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

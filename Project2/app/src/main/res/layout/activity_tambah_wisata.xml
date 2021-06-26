@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahWisata"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#45584E">
+
+    <ImageView
+        android:onClick="PilihGambar"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_image"
+        android:id="@+id/gambar_tb"/>
+
+    <EditText
+        android:id="@+id/name_tb_ws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autoText="true"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kategori"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/kategori_tb_ws"
+        android:autoText="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/alamat_tb_ws"
+        android:autoText="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Tambah Wisata"
+        android:id="@+id/Tambah_wisata"/>
+
+</LinearLayout>
